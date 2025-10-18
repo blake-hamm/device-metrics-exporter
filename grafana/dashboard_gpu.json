@@ -1,7 +1,7 @@
 {
   "__inputs": [
     {
-      "name": "DS_PROMETHEUS",
+      "name": "Prometheus",
       "label": "Prometheus",
       "description": "",
       "type": "datasource",
@@ -2405,7 +2405,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "default"
         },
         "definition": "label_values({gpu_uuid=\"$g_gpu_uuid\"},serial_number)",
         "hide": 2,
