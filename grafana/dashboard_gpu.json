@@ -1959,7 +1959,6 @@
               "card_model": true,
               "card_series": true,
               "card_vendor": true,
-              "cluster_name": true,
               "container": true,
               "driver_version": true,
               "endpoint": true,
@@ -1986,7 +1985,6 @@
               "card_model": 20,
               "card_series": 5,
               "card_vendor": 19,
-              "cluster_name": 11,
               "container": 17,
               "driver_version": 4,
               "endpoint": 12,
@@ -2008,7 +2006,6 @@
               "Value": "Count",
               "__name__": "Error Name",
               "card_series": "Card Series",
-              "cluster_name": "",
               "driver_version": "Driver",
               "gpu_compute_partition_type": "Compute Partition",
               "gpu_id": "GPU ID",
@@ -2182,30 +2179,6 @@
         "query": {
           "qryType": 1,
           "query": "label_values({hostname=\"$g_hostname\", gpu_id=\"$g_gpu_id\", gpu_partition_id=\"$g_gpu_partition_id\"},gpu_uuid)",
-          "refId": "PrometheusVariableQueryEditor-VariableQuery"
-        },
-        "refresh": 2,
-        "regex": "",
-        "skipUrlSync": false,
-        "sort": 7,
-        "type": "query"
-      },
-      {
-        "current": {},
-        "datasource": {
-          "type": "prometheus",
-          "uid": "default"
-        },
-        "definition": "label_values(cluster_name)",
-        "hide": 0,
-        "includeAll": false,
-        "label": "Cluster",
-        "multi": false,
-        "name": "g_cluster_name",
-        "options": [],
-        "query": {
-          "qryType": 1,
-          "query": "label_values(cluster_name)",
           "refId": "PrometheusVariableQueryEditor-VariableQuery"
         },
         "refresh": 2,
