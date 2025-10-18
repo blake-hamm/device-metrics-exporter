@@ -1,71 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "Prometheus",
-      "label": "Prometheus",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    },
-    {
-      "name": "DS_EXPRESSION",
-      "label": "Expression",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "__expr__"
-    }
-  ],
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "datasource",
-      "id": "__expr__",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "gauge",
-      "name": "Gauge",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "11.2.2"
-    },
-    {
-      "type": "datasource",
-      "id": "prometheus",
-      "name": "Prometheus",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "stat",
-      "name": "Stat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "table",
-      "name": "Table",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "text",
-      "name": "Text",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "timeseries",
-      "name": "Time series",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -86,10 +19,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": null,
+  "id": 2,
   "links": [],
   "panels": [
     {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
       "gridPos": {
         "h": 10,
         "w": 3,
@@ -106,10 +43,15 @@
         "content": "##### VENDOR\n${g_card_vendor}\n\n##### SERIES\n${g_card_series}\n\n##### MODEL\n${g_card_model}\n\n##### SERIAL\n${g_serial_number}\n\n##### UUID\n${g_gpu_uuid}",
         "mode": "markdown"
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
+      "title": "",
       "type": "text"
     },
     {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
       "gridPos": {
         "h": 6,
         "w": 3,
@@ -126,7 +68,8 @@
         "content": "#### HOST\n${g_hostname}\n\n#### GPU ID\n${g_gpu_id}\n\n#### PARTITION\n${g_gpu_partition_id}",
         "mode": "markdown"
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
+      "title": "",
       "type": "text"
     },
     {
@@ -146,7 +89,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -180,7 +123,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -251,7 +194,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               }
             ]
           },
@@ -284,7 +227,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -336,7 +279,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -354,6 +297,7 @@
         "y": 0
       },
       "id": 34,
+      "interval": "1m",
       "options": {
         "colorMode": "value",
         "graphMode": "none",
@@ -371,7 +315,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -499,7 +443,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               }
             ]
           }
@@ -530,7 +474,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -603,7 +547,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -631,10 +575,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -673,7 +619,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -710,7 +656,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -776,7 +722,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -794,6 +740,7 @@
         "y": 4
       },
       "id": 38,
+      "interval": "1m",
       "options": {
         "colorMode": "value",
         "graphMode": "area",
@@ -811,7 +758,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -851,7 +798,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               }
             ]
           },
@@ -884,7 +831,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -908,6 +855,10 @@
       "type": "stat"
     },
     {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
       "gridPos": {
         "h": 4,
         "w": 3,
@@ -924,7 +875,8 @@
         "content": "#### VBIOS\n${g_gpu_vbios}\n\n#### DRIVER\n${g_driver}",
         "mode": "markdown"
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
+      "title": "",
       "type": "text"
     },
     {
@@ -945,7 +897,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -964,6 +916,7 @@
         "y": 7
       },
       "id": 8,
+      "interval": "1m",
       "options": {
         "colorMode": "value",
         "graphMode": "none",
@@ -981,7 +934,7 @@
         "textMode": "value",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1031,7 +984,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -1049,6 +1002,7 @@
         "y": 7
       },
       "id": 39,
+      "interval": "1m",
       "options": {
         "colorMode": "value",
         "graphMode": "area",
@@ -1066,7 +1020,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1139,7 +1093,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -1167,10 +1121,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1277,7 +1233,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -1305,11 +1261,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1412,7 +1369,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -1440,10 +1397,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1533,7 +1492,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -1561,10 +1520,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1654,7 +1615,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -1682,10 +1643,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1757,7 +1720,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "red",
@@ -1785,10 +1748,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1868,7 +1833,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "red",
@@ -1928,7 +1894,7 @@
         "showHeader": true,
         "sortBy": []
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -1959,6 +1925,7 @@
               "card_model": true,
               "card_series": true,
               "card_vendor": true,
+              "cluster_name": true,
               "container": true,
               "driver_version": true,
               "endpoint": true,
@@ -1985,6 +1952,7 @@
               "card_model": 20,
               "card_series": 5,
               "card_vendor": 19,
+              "cluster_name": 11,
               "container": 17,
               "driver_version": 4,
               "endpoint": 12,
@@ -2006,6 +1974,7 @@
               "Value": "Count",
               "__name__": "Error Name",
               "card_series": "Card Series",
+              "cluster_name": "",
               "driver_version": "Driver",
               "gpu_compute_partition_type": "Compute Partition",
               "gpu_id": "GPU ID",
@@ -2067,7 +2036,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "red",
@@ -2095,10 +2065,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
+      "pluginVersion": "12.1.1",
       "targets": [
         {
           "datasource": {
@@ -2117,6 +2089,10 @@
       "type": "timeseries"
     },
     {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
       "gridPos": {
         "h": 2,
         "w": 2,
@@ -2133,13 +2109,14 @@
         "content": "v1.3.1",
         "mode": "markdown"
       },
-      "pluginVersion": "11.2.2",
+      "pluginVersion": "12.1.1",
       "title": "Version",
       "type": "text"
     }
   ],
+  "preload": false,
   "refresh": "",
-  "schemaVersion": 39,
+  "schemaVersion": 41,
   "tags": [],
   "templating": {
     "list": [
@@ -2149,7 +2126,6 @@
           "value": ""
         },
         "description": "string to prefix names of metrics queries (e.g. gpu_gfx_activity -> amd_gpu_gfx_activity)",
-        "hide": 0,
         "label": "Metrics Prefix",
         "name": "g_metrics_prefix",
         "options": [
@@ -2160,7 +2136,6 @@
           }
         ],
         "query": "",
-        "skipUrlSync": false,
         "type": "textbox"
       },
       {
@@ -2173,7 +2148,6 @@
         "hide": 2,
         "includeAll": false,
         "label": "GPU UUID",
-        "multi": false,
         "name": "g_gpu_uuid",
         "options": [],
         "query": {
@@ -2183,7 +2157,27 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
+        "sort": 7,
+        "type": "query"
+      },
+      {
+        "current": {},
+        "datasource": {
+          "type": "prometheus",
+          "uid": "default"
+        },
+        "definition": "label_values(cluster_name)",
+        "includeAll": false,
+        "label": "Cluster",
+        "name": "g_cluster_name",
+        "options": [],
+        "query": {
+          "qryType": 1,
+          "query": "label_values(cluster_name)",
+          "refId": "PrometheusVariableQueryEditor-VariableQuery"
+        },
+        "refresh": 2,
+        "regex": "",
         "sort": 7,
         "type": "query"
       },
@@ -2194,10 +2188,8 @@
           "uid": "default"
         },
         "definition": "label_values(hostname)",
-        "hide": 0,
         "includeAll": false,
         "label": "Hostname",
-        "multi": false,
         "name": "g_hostname",
         "options": [],
         "query": {
@@ -2207,7 +2199,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
         "sort": 7,
         "type": "query"
       },
@@ -2218,10 +2209,8 @@
           "uid": "default"
         },
         "definition": "label_values({hostname=\"$g_hostname\"},gpu_id)",
-        "hide": 0,
         "includeAll": false,
         "label": "GPU ID",
-        "multi": false,
         "name": "g_gpu_id",
         "options": [],
         "query": {
@@ -2231,7 +2220,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
         "sort": 7,
         "type": "query"
       },
@@ -2242,10 +2230,8 @@
           "uid": "default"
         },
         "definition": "label_values({hostname=\"$g_hostname\", gpu_id=\"$g_gpu_id\"},gpu_partition_id)",
-        "hide": 0,
         "includeAll": true,
         "label": "Partition",
-        "multi": false,
         "name": "g_gpu_partition_id",
         "options": [],
         "query": {
@@ -2255,7 +2241,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
         "sort": 7,
         "type": "query"
       },
@@ -2268,7 +2253,6 @@
         "definition": "label_values({gpu_uuid=\"$g_gpu_uuid\"},vbios_version)",
         "hide": 2,
         "includeAll": false,
-        "multi": false,
         "name": "g_gpu_vbios",
         "options": [],
         "query": {
@@ -2278,8 +2262,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
         "type": "query"
       },
       {
@@ -2291,7 +2273,6 @@
         "definition": "label_values({gpu_uuid=\"$g_gpu_uuid\"},driver_version)",
         "hide": 2,
         "includeAll": false,
-        "multi": false,
         "name": "g_driver",
         "options": [],
         "query": {
@@ -2301,8 +2282,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
         "type": "query"
       },
       {
@@ -2314,7 +2293,6 @@
         "definition": "label_values({gpu_uuid=\"$g_gpu_uuid\"},card_vendor)",
         "hide": 2,
         "includeAll": false,
-        "multi": false,
         "name": "g_card_vendor",
         "options": [],
         "query": {
@@ -2324,8 +2302,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
         "type": "query"
       },
       {
@@ -2337,7 +2313,6 @@
         "definition": "label_values({gpu_uuid=\"$g_gpu_uuid\"},card_series)",
         "hide": 2,
         "includeAll": false,
-        "multi": false,
         "name": "g_card_series",
         "options": [],
         "query": {
@@ -2347,8 +2322,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
         "type": "query"
       },
       {
@@ -2360,7 +2333,6 @@
         "definition": "label_values({gpu_uuid=\"$g_gpu_uuid\"},card_model)",
         "hide": 2,
         "includeAll": false,
-        "multi": false,
         "name": "g_card_model",
         "options": [],
         "query": {
@@ -2370,8 +2342,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
         "type": "query"
       },
       {
@@ -2383,7 +2353,6 @@
         "definition": "label_values({gpu_uuid=\"$g_gpu_uuid\"},serial_number)",
         "hide": 2,
         "includeAll": false,
-        "multi": false,
         "name": "g_serial_number",
         "options": [],
         "query": {
@@ -2393,8 +2362,6 @@
         },
         "refresh": 2,
         "regex": "",
-        "skipUrlSync": false,
-        "sort": 0,
         "type": "query"
       }
     ]
@@ -2407,6 +2374,5 @@
   "timezone": "browser",
   "title": "AMD GPU",
   "uid": "ae0aj8euc43r4b",
-  "version": 1,
-  "weekStart": ""
+  "version": 1
 }
